@@ -1,2 +1,5 @@
 #Ignore Article docx
 *.docx
+
+#Ignore Article template
+article_template.html
