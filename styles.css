@@ -1,0 +1,94 @@
+/* Custom CSS */
+body {
+    font-family: 'Catamaran', sans-serif;
+  }
+
+.article-text  {
+    color: black;
+    text-decoration: none;
+  }
+  /* unvisited link 
+a:link {
+    color: red;
+  }
+  */
+  
+  /* visited link */ 
+  a:visited {
+    color: gray;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #FF7F3F;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #EA5C2B;
+  }
+
+  /* Adjustments for smaller header */
+  .navbar-brand {
+    font-size: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navbar-toggler {
+    margin-top: 0.25rem;
+  }
+
+  .navbar-gradient-fade {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  /*Color gradient for footer*/
+  .footer-gradient-fade {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.8) 100%);
+  }
+
+  /* Animated gradient background */
+  .wave-background {
+    position: relative;
+    overflow: hidden;
+    animation: wave-animation 10s infinite linear;
+    background: linear-gradient(-45deg, #EA5C2B, #FF7F3F, #F6D860, #95CD41, #3876BF, #3876BF);
+    background-size: 400% 400%;
+    z-index: -1;
+  }
+
+  @keyframes wave-animation {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+  }
+
+  /*Styling for logo*/
+  .header-logo{
+    margin-right: 6px;
+  }
+
+  /*Styling for about me section*/
+  #About-me {
+  background-color: #f8f9fa;
+}
+
+  #About-me h2 {
+      color: #333;
+  }
+
+  .social-links {
+      margin-top: 20px;
+  }
+
+  .social-link {
+      display: inline-block;
+      font-size: 24px;
+      margin-right: 15px;
+      color: #333;
+  }
+
+  .social-link:hover {
+      color: #007bff;
+  }
