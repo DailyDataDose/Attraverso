@@ -52,6 +52,7 @@ a:link {
   .wave-background {
     position: relative;
     overflow: hidden;
+    height: 600px;
     animation: wave-animation 10s infinite linear;
     background: linear-gradient(-45deg, #EA5C2B, #FF7F3F, #F6D860, #95CD41, #3876BF, #3876BF);
     background-size: 400% 400%;
@@ -91,4 +92,13 @@ a:link {
 
   .social-link:hover {
       color: #007bff;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in.fade-in-active {
+    opacity: 1;
   }
