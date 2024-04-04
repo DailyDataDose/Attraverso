@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
   <!-- Social media - Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -27,8 +28,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav text-center">
             <li class="nav-item"><a class="nav-link" href="#Home">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#Articles">Artículos</a></li>
             <li class="nav-item"><a class="nav-link" href="#About-me">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Articles">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#News">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Recommendations">Recomendaciones</a></li>
             <li class="nav-item"><a class="nav-link" href="#Contact">Contacto</a></li>
           </ul>
         </div>
@@ -40,82 +43,13 @@
   <section id="Home">
   <div class="wave-background text-white py-5 d-flex align-items-center justify-content-center">
     <div class="fade-in container mt-5">
-      <h1 class="text-center">Attraverso</h1>
+      <h1 class="text-center display-1">Attraverso</h1>
       <p class="lead text-center">Descubre el mundo desde una nueva perspectiva. Donde el turismo se encuentra con la política y cada experiencia despierta el cambio</p>
     </div>
   </div>
 </section>
 
-  <!-- Second div - Grid of article cards -->
-  <section class="py-5" id="Articles">
-    <div class="container mt-3">
-      <div class="row">
-        <!-- 6RumboAl2023 -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="6RumboAl2023.html"><img src="Resources/ArticleImages/6ImagenSostenibilidad.jpg" class="card-img-top" alt="Imagen: Rumbo al 2023"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="6RumboAl2023.html">Rumbo al 2023</a></h5>
-              <p class="card-text"><a class="article-text" href="6RumboAl2023.html">2022: un año turístico sorprendente. Reflexionamos sobre la necesidad de adaptarnos al cambio y enfocarnos en un turismo más inclusivo y sostenible. #RethinkingTourism</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- 5Rethinking -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="5Rethinking.html"href="5Rethinking.html"><img src="Resources/ArticleImages/5ImagenRethinkingTourism.jpg" class="card-img-top" alt="Imagen: Rethinking Tourism"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="5Rethinking.html">Rethinking Tourism</a></h5>
-              <p class="card-text"><a class="article-text" href="5Rethinking.html">En el Día Mundial del Turismo 2022, repensamos el futuro del sector. Un llamado a trabajar juntos por un turismo más sostenible y centrado en las personas. #WorldTourismDay2022</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- 4Digitalización -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="4Digitalización.html"><img src="Resources/ArticleImages/4ImagenDigitalizacion.jpg" class="card-img-top" alt="Imagen: Digitalización, clave en la recuperación turística"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="4Digitalización.html">Digitalización, clave en la recuperación turística</a></h5>
-              <p class="card-text"><a class="article-text" href="4Digitalización.html">La falta de impulso público hacia la digitalización limita el posicionamiento de destinos. La convocatoria Promesa del Turismo 2022 busca reconocer a emprendedores innovadores. #InnovatingTourism #PromesaTurismo2022</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- 3TurismoPrioridad -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="3TurismoPrioridad.html"><img src="Resources/ArticleImages/3TurismoPrioridad.jpg" class="card-img-top" alt="Imagen: Turismo en México, ¿prioridad nacional?"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="3TurismoPrioridad.html">Turismo en México, ¿prioridad nacional?</a></h5>
-              <p class="card-text"><a class="article-text" href="3TurismoPrioridad.html">La pandemia subrayó la importancia de la unidad en la gobernanza del sector. El turismo emerge como una prioridad nacional, destacando la necesidad de colaboración entre empresarios y autoridades.</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- 2MujeresYTurismo -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="2MujeresYTurismo.html"><img src="Resources/ArticleImages/2ImagenMujeresYTurismo.jpg" class="card-img-top" alt="Imagen: Mujeres y Turismo"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="2MujeresYTurismo.html">Hablando de Mujeres y Turismo</a></h5>
-              <p class="card-text"><a class="article-text" href="2MujeresYTurismo.html">Marzo nos recuerda la importancia de la igualdad de género en el turismo. Datos reveladores subrayan la importancia del empoderamiento femenino para el crecimiento económico y social. Celebremos el empoderamiento femenino y trabajemos juntos por un futuro más equitativo.</a></p>
-            </div>
-          </div>
-        </div>
-        <!--1Sostenibilidad -->
-        <div class="fade-in col-md-4 mb-4">
-          <div class="card">
-            <a href="1Sostenibilidad.html"><img src="Resources/ArticleImages/1Sostenibilidad.jpg" class="card-img-top" alt="Imagen: Sostenibilidad"></a>
-            <div class="card-body">
-              <h5 class="card-title"><a class="article-text" href="1Sostenibilidad.html">Sostenibilidad, esta es la cuestión</a></h5>
-              <p class="card-text"><a class="article-text" href="1Sostenibilidad.html">La pandemia ha impulsado un cambio hacia la sostenibilidad en el turismo, con acciones concretas como la transparencia en la huella de carbono y el apoyo a productos locales. Es crucial que trabajemos juntos hacia un turismo más sostenible mediante un diálogo inclusivo entre el sector público, privado y la ciudadanía.</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Add more article cards as needed -->
-
-  <!-- Third div with author info -->
+  <!-- Second div with author info -->
   <section id="About-me" class="py-5">
     <div class="fade-in container mt-3">
         <div class="row">
@@ -131,6 +65,212 @@
     </div>
 </section>
 
+  <!-- Third div - Grid of article cards -->
+  <section class="py-5" id="Articles">
+    <div class="container mt-3">
+      <div class="row">
+        <!-- 6RumboAl2023 -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="6RumboAl2023.html"><img src="Resources/ArticleImages/6ImagenSostenibilidad.jpg" class="card-img-top" alt="Imagen: Rumbo al 2023"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="6RumboAl2023.html">Rumbo al 2023</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="6RumboAl2023.html">2022: un año turístico sorprendente. Reflexionamos sobre la necesidad de adaptarnos al cambio y enfocarnos en un turismo más inclusivo y sostenible. #RethinkingTourism</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- 5Rethinking -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="5Rethinking.html"href="5Rethinking.html"><img src="Resources/ArticleImages/5ImagenRethinkingTourism.jpg" class="card-img-top" alt="Imagen: Rethinking Tourism"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="5Rethinking.html">Rethinking Tourism</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="5Rethinking.html">En el Día Mundial del Turismo 2022, repensamos el futuro del sector. Un llamado a trabajar juntos por un turismo más sostenible y centrado en las personas. #WorldTourismDay2022</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- 4Digitalización -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="4Digitalización.html"><img src="Resources/ArticleImages/4ImagenDigitalizacion.jpg" class="card-img-top" alt="Imagen: Digitalización, clave en la recuperación turística"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="4Digitalización.html">Digitalización, clave en la recuperación turística</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="4Digitalización.html">La falta de impulso público hacia la digitalización limita el posicionamiento de destinos. La convocatoria Promesa del Turismo 2022 busca reconocer a emprendedores innovadores. #InnovatingTourism #PromesaTurismo2022</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- 3TurismoPrioridad -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="3TurismoPrioridad.html"><img src="Resources/ArticleImages/3TurismoPrioridad.jpg" class="card-img-top" alt="Imagen: Turismo en México, ¿prioridad nacional?"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="3TurismoPrioridad.html">Turismo en México, ¿prioridad nacional?</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="3TurismoPrioridad.html">La pandemia subrayó la importancia de la unidad en la gobernanza del sector. El turismo emerge como una prioridad nacional, destacando la necesidad de colaboración entre empresarios y autoridades.</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- 2MujeresYTurismo -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="2MujeresYTurismo.html"><img src="Resources/ArticleImages/2ImagenMujeresYTurismo.jpg" class="card-img-top" alt="Imagen: Mujeres y Turismo"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="2MujeresYTurismo.html">Hablando de Mujeres y Turismo</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="2MujeresYTurismo.html">Marzo nos recuerda la importancia de la igualdad de género en el turismo. Datos reveladores subrayan la importancia del empoderamiento femenino para el crecimiento económico y social. Celebremos el empoderamiento femenino y trabajemos juntos por un futuro más equitativo.</a></p>
+            </div>
+          </div>
+        </div>
+        <!--1Sostenibilidad -->
+        <div class="fade-in col-md-4 mb-4">
+          <div class="card">
+            <a target="_blank" href="1Sostenibilidad.html"><img src="Resources/ArticleImages/1Sostenibilidad.jpg" class="card-img-top" alt="Imagen: Sostenibilidad"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a target="_blank" class="article-text" href="1Sostenibilidad.html">Sostenibilidad, esta es la cuestión</a></h5>
+              <p class="card-text"><a target="_blank" class="article-text" href="1Sostenibilidad.html">La pandemia ha impulsado un cambio hacia la sostenibilidad en el turismo, con acciones concretas como la transparencia en la huella de carbono y el apoyo a productos locales. Es crucial que trabajemos juntos hacia un turismo más sostenible mediante un diálogo inclusivo entre el sector público, privado y la ciudadanía.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Add more article cards as needed -->
+
+<!-- Fourth div with news -->
+<section id="News" class="py-5">
+    <!-- Carousel -->
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+      <h2 class="text-left text-white">Noticias relevantes</h2>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    </div>
+    
+    
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+    
+      <div class="container marketing">
+    
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="text-white fw-normal">Heading</h2>
+            <p class="text-white">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p class="text-white"><a class="btn btn-light" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="text-white fw-normal">Heading</h2>
+            <p class="text-white">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-light" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+            <h2 class="text-white fw-normal">Heading</h2>
+            <p class="text-white">And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-light" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    </section>
+
+<!-- Fifth div with recommendations -->
+    <!-- START THE FEATURETTES -->
+    <section id="Recommendations" class="py-5">
+      <div class="container marketing">
+        <h2 class="featurette-heading fw-normal lh-1">Recomendaciones</h2>
+      <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div><!-- /.container -->
+
+      <div class="container py-4">
+      </div>
+    </div>
+    </section>
+
   <!-- Footer -->
   <footer class="bg-dark text-white py-4 footer-gradient-fade" id="Contact">
     <div class="container">
@@ -143,25 +283,28 @@
             <!-- First column with navigation links -->
             <div class="col-md-4">
                 <ul class="list-unstyled navbar-nav">
-                    <li class="mb-2"><a href="#Home" class="text-center text-white nav-link">Inicio</a></li>
-                    <li class="mb-2"><a href="#Articles" class="text-center text-white nav-link">Artículos</a></li>
-                    <li class="mb-2"><a href="#About-me" class="text-center text-white nav-link">Sobre mí</a></li>
-                    <li class="mb-2"><a href="#Contact" class="text-center text-white nav-link">Contacto</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#Home">Inicio</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#About-me">Sobre mí</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#Articles">Artículos</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#News">Noticias</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#Recommendations">Recomendaciones</a></li>
+                    <li class="mb-2"><a class="text-center text-white nav-link" href="#Contact">Contacto</a></li>
                 </ul>
             </div>
             <!-- Second column with copyright message and social media icons -->
             <div class="col-md-4">
               <div class="d-flex justify-content-center">
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-lg text-white mr-3"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-lg text-white mr-3"></i></a>
-                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-lg text-white mr-3"></i></a>
-                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-lg text-white"></i></a>
+                <a target="_blank" href="https://www.facebook.com/ClaudiaChavezTurismo?mibextid=LQQJ4d"><i class="fab fa-facebook-square fa-lg text-white mr-3"></i></a>
+                <a target="_blank" href="https://www.instagram.com/claudia_chavez_lopez?igsh=MWkyY3ljYnhocGsybA%3D%3D&utm_source=qr"><i class="fab fa-instagram fa-lg text-white mr-3"></i></a>
+                <a target="_blank" href="https://www.threads.net/@claudia_chavez_lopez"><i class="fab fa-threads fa-lg text-white mr-3"></i></a>
+                <a target="_blank" href="https://twitter.com/ms_clauchavez?lang=en"><i class="fab fa-x-twitter fa-lg text-white mr-3"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/claudia-ch%C3%A1vez-06879823/"><i class="fab fa-linkedin fa-lg text-white"></i></a>
                 </div>
                 <p class="text-center mt-3">¡Sígueme en redes sociales!</p>
             </div>
             <div class="col-md-4">
-              <p class="text-center text-muted">© 2024 Attraverso</p>
-              <p class="text-center text-muted">Reservados todos los derechos</p>
+              <p class="text-center text-white">© 2024 Attraverso</p>
+              <p class="text-center text-white">Reservados todos los derechos</p>
             </div>
         </div>
     </div>
@@ -169,9 +312,11 @@
 
 
   <!-- Bootstrap JS (optional, if you need dropdown functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/aefa4afc15.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>
 </html>
