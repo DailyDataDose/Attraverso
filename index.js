@@ -1,3 +1,4 @@
+// 1. FOR FADING IN ANIMATIONS
 // Select all navbar links
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
@@ -17,31 +18,50 @@ navLinks.forEach(link => {
     });
 });
 
-//For Fade in animation on text
 $(document).ready(function() {
-    // Function to check if an element is in the viewport
-    function isInViewport(element) {
-      var rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
+  // Function to check if an element is near the viewport
+  function isNearViewport(element, distance = 30) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) + distance
+    );
+  }
 
-    // Function to handle the scroll event
-    function handleScroll() {
-      $('.fade-in').each(function() {
-        if (isInViewport(this)) {
-          $(this).addClass('fade-in-active');
+  // Function to handle the scroll event
+  function handleScroll() {
+    $('.fade-in').each(function() {
+      if (isNearViewport(this)) {
+        $(this).addClass('fade-in-active');
+      }
+    });
+  }
+
+  // Initial check when the page loads
+  handleScroll();
+
+  // Event listener for scroll event
+  $(window).on('scroll', handleScroll);
+});
+
+// 2. FOR CARD ANIMATIONS
+const cards = document.querySelectorAll('.ani-card');
+
+cards.forEach(card => {
+    let isAnimating = false;
+
+    card.addEventListener('mouseenter', function() {
+        if (!isAnimating) {
+            this.classList.add('hover-end');
         }
-      });
-    }
+    });
 
-    // Initial check when the page loads
-    handleScroll();
+    card.addEventListener('mouseleave', function() {
+        isAnimating = true;
+        this.classList.remove('hover-end');
 
-    // Event listener for scroll event
-    $(window).on('scroll', handleScroll);
-  });
+        this.addEventListener('transitionend', () => {
+            isAnimating = false;
+        }, { once: true });
+    });
+});
+

@@ -1,4 +1,4 @@
-/* Custom CSS */
+/* ---------- Basic Global Stuff ------------ */
 body {
     font-family: 'Catamaran', sans-serif;
   }
@@ -29,6 +29,8 @@ a:link {
     color: #EA5C2B;
   }
 
+  /* ---------- Header and Footer Configurations ------------ */
+
   /* Adjustments for smaller header */
   .navbar-brand {
     font-size: 1.5rem;
@@ -43,32 +45,21 @@ a:link {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
   }
 
-  /*Color gradient for footer*/
-  .footer-gradient-fade {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.8) 100%);
-  }
-
-  /* Animated gradient background */
-  .wave-background {
-    position: relative;
-    overflow: hidden;
-    height: 600px;
-    animation: wave-animation 10s infinite linear;
-    background: linear-gradient(-45deg, #EA5C2B, #FF7F3F, #F6D860, #95CD41, #3876BF, #3876BF);
-    background-size: 400% 400%;
-    z-index: -1;
-  }
-
-  @keyframes wave-animation {
-    0% { background-position: 0 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0 50%; }
-  }
-
   /*Styling for logo*/
   .header-logo{
     margin-right: 6px;
   }
+
+  /*Color gradient for footer*/
+  .footer-gradient-fade {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+  /* ---------- Section Specific Stylings ------------ */
+  /* Styling for home section */
+#Home{
+  height: 100vh;
+}
 
   /*Styling for about me section*/
   #About-me {
@@ -83,6 +74,7 @@ a:link {
       color: #333;
   }
 
+    /* ---------- Social Links Specific Stylings ------------ */
   .social-links {
       margin-top: 20px;
   }
@@ -98,18 +90,25 @@ a:link {
       color: #007bff;
   }
 
-  .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  /* ---------- 1st Section: Gradient Background ------------ */
+  /* Animated gradient background */
+  .wave-background {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    animation: wave-animation 10s infinite linear;
+    background: linear-gradient(-45deg, #EA5C2B, #FF7F3F, #F6D860, #95CD41, #3876BF, #3876BF);
+    background-size: 400% 400%;
+    z-index: -1;
   }
 
-  .fade-in.fade-in-active {
-    opacity: 1;
+  @keyframes wave-animation {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
   }
 
-   /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  
+/* ---------- 4th Section: Carousel & Featurettes ---------- */
   /* Carousel base class */
   .carousel {
     margin-bottom: 4rem;
@@ -127,8 +126,7 @@ a:link {
   }
   
   
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
+  /* MARKETING CONTENT */
   
   /* Center align the text within the three columns below the carousel */
   .marketing .col-lg-4 {
@@ -143,8 +141,7 @@ a:link {
   /* rtl:end:ignore */
   
   
-  /* Featurettes
-  ------------------------- */
+  /* Featurettes */
   
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -158,8 +155,7 @@ a:link {
   
   /* rtl:end:remove */
   
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
+  /* RESPONSIVE CSS */
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
@@ -179,7 +175,36 @@ a:link {
       margin-top: 7rem;
     }
   }
+
+/* ---------- Fade-in Animation ------------ */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in.fade-in-active {
+    opacity: 1;
+  }
+
+  /* ---------- Buoy Animation: Cards ------------ */
+  .ani-card {
+    /* Your card styles */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.ani-card:hover {
+    transform: scale(1.05); /* Adjust the scale as needed */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+    opacity: 0.9; /* Adjust the opacity value as needed */
+}
+
+.ani-card.hover-end {
+    animation-play-state: paused; /* Pause animation */
+}
+
   
+  /* ---------- Is this another separate section? ----------*/
     /* Styling for the loading screen */
     #loading-screen {
       position: fixed;
